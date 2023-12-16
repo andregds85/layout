@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      background-color: #f4f4f4;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+      padding: 0;
+    }
+
+    .card-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      max-width: 800px;
+    }
+
+    .card {
+      width: calc(33.33% - 20px);
+      margin: 10px 0;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+
+    .card img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 20px;
+    }
+
+    .card-title {
+      font-size: 1.5em;
+      margin-bottom: 10px;
+    }
+
+    .card-description {
+      color: #666;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 8px 12px;
+      margin-top: 10px;
+      text-decoration: none;
+      background-color: #3498db;
+      color: #fff;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+
+    .btn:hover {
+      background-color: #2980b9;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card-container">
+    <!-- Cartão 1 -->
+    <div class="card">
+      <img src="https://via.placeholder.com/300" alt="Card Image">
+      <div class="card-content">
+        <h2 class="card-title">Título do Cartão 1</h2>
+        <p class="card-description">Descrição do cartão 1. Pode ser um resumo do conteúdo.</p>
+        <a href="#" class="btn">Saiba mais</a>
+      </div>
+    </div>
+
+    <!-- Cartão 2 -->
+    <div class="card">
+      <img src="https://via.placeholder.com/300" alt="Card Image">
+      <div class="card-content">
+        <h2 class="card-title">Título do Cartão 2</h2>
+        <p class="card-description">Descrição do cartão 2. Pode ser um resumo do conteúdo.</p>
+        <a href="#" class="btn">Saiba mais</a>
+      </div>
+    </div>
+
+    <!-- Cartão 3 -->
+    <div class="card">
+      <img src="https://via.placeholder.com/300" alt="Card Image">
+      <div class="card-content">
+        <h2 class="card-title">Título do Cartão 3</h2>
+        <p class="card-description">Descrição do cartão 3. Pode ser um resumo do conteúdo.</p>
+        <a href="#" class="btn">Saiba mais</a>
+      </div>
+    </div>
+
+    <!-- Cartão 4 -->
+    <div class="card">
+      <img src="https://via.placeholder.com/300" alt="Card Image">
+      <div class="card-content">
+        <h2 class="card-title">Título do Cartão 4</h2>
+        <p class="card-description">Descrição do cartão 4. Pode ser um resumo do conteúdo.</p>
+        <a href="#" class="btn">Saiba mais</a>
+      </div>
+    </div>
+
+    <!-- Cartão 5 -->
+    <div class="card">
+      <img src="https://via.placeholder.com/300" alt="Card Image">
+      <div class="card-content">
+        <h2 class="card-title">Título do Cartão 5</h2>
+        <p class="card-description">Descrição do cartão 5. Pode ser um resumo do conteúdo.</p>
+        <a href="#" class="btn">Saiba mais</a>
+      </div>
+    </div>
+
+    <!-- Cartão 6 -->
+    <div class="card">
+      <img src="https://via.placeholder.com/300" alt="Card Image">
+      <div class="card-content">
+        <h2 class="card-title">Título do Cartão 6</h2>
+        <p class="card-description">Descrição do cartão 6. Pode ser um resumo do conteúdo.</p>
+        <a href="#" class="btn">Saiba mais</a>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
