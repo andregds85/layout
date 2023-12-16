@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Docker</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+     .card-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      max-width: 800px;
+
+    }
+
+    .card {
+      width: calc(33.33% - 20px);
+      margin: 10px 0;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+
+    .card img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 20px;
+    }
+
+    .card-title {
+      font-size: 1.5em;
+      margin-bottom: 10px;
+    }
+
+    .card-description {
+      color: #666;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 8px 12px;
+      margin-top: 10px;
+      text-decoration: none;
+      background-color: #3498db;
+      color: #fff;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+
+    .btn:hover {
+      background-color: #2980b9;
+    }
+
+        header {
+            background-color: #1b22f5;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        h2{
+            color: tomato;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        nav {
+            background-color: #f51b1b;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            margin: 0 20px;
+            font-size: 18px;
+        }
+
+        section {
+            padding: 50px;
+            text-align: center;
+        }
+
+        section:nth-child(odd) {
+            background-color: #f4f4f4;
+        }
+
+        footer {
+            background-color: #f51b1b;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+    </style>
+</head>
+<body>
+            
+    
+            <header>
+            <h1>Docker</h1>
+            </header>
+                        
+            <nav>
+            <a href="#execimagem">Rodando imagem</a>
+            <a href="#docker">Docker</a>
+            <a href="#imagem">Imagem</a>
+            <a href="#container">Container</a>
+            <a href="#containerrun">Manter o Container Run</a>
+            <a href="#listarcontainer">Listando Container</a>
+            <a href="#paracontainer">Para Container</a>
+            <a href="#instalar">Instalar Docker</a>
+            <a href="#portainer">Portainer</a>
+
+            </nav>
+    
+            <section id="execimagem">
+                <h3> $ docker ps -a </h3>
+                <p>O Docker cria automaticamente um nome aleatorio para cada container criado apartir do 
+                do comando run, Através desse nome você pode continuar utilizando o container sem perder os dados a cada inicialização
+                </p>
+            <center>
+                <div class="card-container">
+                <!-- Cartão 1 -->
+                <div class="card">
+                  <img src="https://via.placeholder.com/300" alt="Card Image">
+                  <div class="card-content">
+                    <h2 class="card-title">Título do Cartão 1</h2>
+                    <p class="card-description">Descrição do cartão 1. Pode ser um resumo do conteúdo.</p>
+                    <a href="#" class="btn">Saiba mais</a>
+                  </div>
+                </div>
+            
+                <!-- Cartão 2 -->
+                <div class="card">
+                  <img src="https://via.placeholder.com/300" alt="Card Image">
+                  <div class="card-content">
+                    <h2 class="card-title">Título do Cartão 2</h2>
+                    <p class="card-description">Descrição do cartão 2. Pode ser um resumo do conteúdo.</p>
+                    <a href="#" class="btn">Saiba mais</a>
+                  </div>
+                </div>
+            
+                <!-- Cartão 3 -->
+                <div class="card">
+                  <img src="https://via.placeholder.com/300" alt="Card Image">
+                  <div class="card-content">
+                    <h2 class="card-title">Título do Cartão 3</h2>
+                    <p class="card-description">Descrição do cartão 3. Pode ser um resumo do conteúdo.</p>
+                    <a href="#" class="btn">Saiba mais</a>
+                  </div>
+                </div>
+            
+                <!-- Cartão 4 -->
+                <div class="card">
+                  <img src="https://via.placeholder.com/300" alt="Card Image">
+                  <div class="card-content">
+                    <h2 class="card-title">Título do Cartão 4</h2>
+                    <p class="card-description">Descrição do cartão 4. Pode ser um resumo do conteúdo.</p>
+                    <a href="#" class="btn">Saiba mais</a>
+                  </div>
+                </div>
+            
+                <!-- Cartão 5 -->
+                <div class="card">
+                  <img src="https://via.placeholder.com/300" alt="Card Image">
+                  <div class="card-content">
+                    <h2 class="card-title">Título do Cartão 5</h2>
+                    <p class="card-description">Descrição do cartão 5. Pode ser um resumo do conteúdo.</p>
+                    <a href="#" class="btn">Saiba mais</a>
+                  </div>
+                </div>
+            
+                <!-- Cartão 6 -->
+                <div class="card">
+                  <img src="https://via.placeholder.com/300" alt="Card Image">
+                  <div class="card-content">
+                    <h2 class="card-title">Título do Cartão 6</h2>
+                    <p class="card-description">Descrição do cartão 6. Pode ser um resumo do conteúdo.</p>
+                    <a href="#" class="btn">Saiba mais</a>
+                  </div>
+                </div>
+              </div>
+        
+              </center>
+        
+        
+        </section>
+    
+            <section id="docker">
+            <h2>Docker</h2>
+            <p>Docker é uma ferramenta que cria micro maquinas virtuais com a finalidade de não "sujar" o ambiente do desenvolvedor</p>
+            <p>Dessa forma você pode ter dois ambientes configurados sem um conflitar um com Outro</p>
+            </section>
+
+            <section id="imagem">
+            <h2>Imagem</h2>
+            <p>É como se fosse uma iso do Sistema Operacional  </p>
+            <p>Serve para se tornar uma maquina virtual e se tornar um container</p>
+            <p>As imagens podem ser limpas como as que você usa como as que você usa para formatar um computador ou customizalas com vários aplicativos instalados por exemplo Apache, mysql, jekins, nodejs e etc ...</p>
+            <p>Qualquer coisa que pode ser feita em linha de comando pode servir de configuração para a imagem 
+            </p>
+            </section>
+    
+            <section id="container">
+            <h2>Container</h2>
+            <P>É uma maquina virtual depois de pronta para uso iniciada apartir de uma imagem . Trata-se
+            de um ambiente completo que pode ser acessado via linha de comando. Containers Ligam  e Desligam 
+            instantaneamente e podem ser "resetados" ao desligar ou manter as congurações para a próxima vez que forem ligados.</P>
+            <P>Pensem assim Você baixa uma imagem iso, formata seu computador instala uns programas e pronto ele é um container</P>
+            <p>O poder e a Velocidade do docker vem da vantagem de que todas as imagens já estão prontas para uso e não há perda de tempo para formatação da máquina. </p>
+            <p>Então se você rodar uma imagem do MYSQL o docker vai fazer o download e sem nenhuma interação o servidor ja vai estar </p>  
+            </section>
+
+            <section id="containerrun">
+            <h2>Manter o Container Rodando</h2>
+            <p><h3>$ docker run ubumtu bash</h3></p>
+            <p>Este Comando vai montar toda configuração e te dar acesso
+            ao shell root do container.</p>
+            <p>Equanto você não digitar exit e der enter o container permanecerá rodando</p>
+            </section>
+
+            <section id="listarcontainer">
+            <h2>Listando Container </h2>
+            <p>Cada vez que você executa o comando run, o docker vai criar um novo container do zero
+            e armazenar em cache para utilização futura. </p>
+            <p>Você não executar o comando Run toda hora. </p>
+            <h3> $ docker ps -a </h3>
+            <p>O Docker cria automaticamente um nome aleatorio para cada container criado apartir do 
+            do comando run, Através desse nome você pode continuar utilizando o container sem perder os dados a cada inicialização
+            </p>
+            </section>
+
+            <section id="paracontainer">
+            <h2>Para Container / Rodando Container ja Criado</h2>
+            <p><h3>$ docker start NOME_CONTAINER </h3></p>
+            <P>Ate o comando stop ser rodado. Portanto você não tera acesso ao shell sem utilizar outro 
+            comando </P>
+            <h2>Acessar comandos docker que já estão rodando</h2>
+            <p><h3>$ docker attach NOME_CONTAINER </h3></p>
+            <h2>Renomear Containers</h2>
+            <p>O docker se encarrega de dar nomes aleatórios para cada container porem eles 
+            não são nada faceis de lembrar ou você acha que adoring_ardignheli servidor-teste é fácil de escrever e lembrar
+            </p>
+            <P> o Código segue o padrão</P>
+            <p><h3>$ docker rename NOME_PADRAO NOME_FACILDELEMBRAR </h3></p>
+            <P><h2> Para rodar </h2></P>
+            <p><h3>$ docker start servidor-teste </h3></p>
+            <p><h3>$ docker attach servidor-teste </h3></p>
+            <h2>Para Container </h2>
+            <p><h3>$ docker stop servidor-teste </h3></p>       
+            </section>
+
+            <section id="instalar">
+            <h2>Instalar Docker Engine e Compose</h2>
+            <p><h3>$ sudo apt install docker.io docker-compose </h3></p>       
+            <h2>Iniciar o Sistema </h2>
+            <p><h3>$ sudo systemctl enable --now docker docker.socket containerd  </h3></p> 
+            <h2>docker --help</h2>
+            <p><h3>$ sudo systemctl docker enable</h3></p>
+            <h2>Baixar uma imagem do wordpress do docker HUB </h2>
+            <p><h3>$ docker pull wordpress
+            </h3></p>         
+
+
+            <h2>mostra as imagens disponíveis  </h2>
+            <p><h3>$ docker images
+            </h3></p> 
+
+            
+            <h2>Baixar o Ubumtu  </h2>
+            <p><h3>$ docker pull ubumtu
+            </h3></p> 
+
+            <h2>mostra as imagens disponíveis  </h2>
+            <p><h3>$ docker images
+            </h3></p> 
+
+            <h2>Criar um Container Baseado em uma imagem</h2>
+            <p><h3>$ docker run —name meu_wordpress -p 8080:80 -d wordpress 
+            </h3></p>   
+
+            <h2>Mostra os Comandos em execução e lista o ID do Container </h2>
+            <p><h3>$ Docker ps  
+            </h3></p>  
+
+            <h2>Rodar a imagem do Ubuntu  </h2>
+            <p><h3>$ docker run -it ubumtu 
+            </h3></p>  
+
+            <h2>mostra todos os containers que estão parado no momento junto com algumas informações dos containers 
+            </h2>
+            <p><h3>$ docker ps -a    </h3></p> 
+            <p><h3>  Status Exited = está parado</h3></p> 
+            <p><h3>  Status up está rodando </h3></p>
+                        
+            <h2>Parar um container que está rodando </h2>
+            <p><h3>obs pode ser o id ou o nome 
+            </h3></p>  
+
+            <p><h3> docker stop id_do_container  // Para o container <br> docker restart id_do_container  // Reinicializa o Container <br> docker start id_do_container // inicializa o Container 
+            </h3></p>
+            
+            <h2>Remover o Container Docker  </h2>
+            <p><h3>$ docker rm id_do_container 
+            </h3></p>  
+
+
+            <h2>Remoção total da imagem</h2>
+            <p><h3>$ docker rmi id_da_imagem
+            </h3></p>  
+
+
+            <h2>Instalação do Docker </h2>
+            <p><h3><a href="https://gist.github.com/martinsam16/4492957e3bbea34046f2c8b49c3e5ac0"> instalação do Docker</a></h3></p>      
+            </section>    
+
+            <section id="portainer">
+                <h2>Portainer .io e Docker</h2>
+          
+                <p><h3>Instalar o Docker</h3></p>
+                <p>sudo apt-get install docker.io</p>
+               
+                <p><h3>Reiniciar o serviço do docker </h3></p>
+                <p>sudo systemctl restart docker</p>
+               
+                <p><h3>Verificar o status do docker</h3></p>
+                <p>sudo systemctl status docker</p>
+               
+                <p><h3> Ativar no boot</h3></p>
+                <p>sudo systemctl enable docker</p>
+               
+                <p><h3> Instalar o portainer (Altere o seu diret贸rio Home)</h3></p>
+                <p>sudo docker run -d -p 9000:9000 --name portainer --restart always -v /var/run/docker.sock:/var/run/docker.sock -v /home/juliano/Portainer/data:/data portainer/portainer</p>
+               
+                <p><h3> Abra o navegador</h3></p>
+                <p> localhost:9000</p>           
+           
+
+                <p><h3> Video</h3></p>
+                <p> <a href="https://www.youtube.com/watch?v=oZPKKh2zW-s">Link</p>   
+                
+            </section>
+
+    <footer>
+        &copy; Docker.
+    </footer>
+</body>
+</html>
